@@ -1,4 +1,3 @@
-
 let playerSelection = '';
 const computerOptions = ['rock','paper','scissors']
 let computerSelection = "";
@@ -20,8 +19,8 @@ function determineWinner () {
                 lossResult();
                 break;
             case 'scissors':
-                console.log('W')
-                winResult;
+                console.log('W');
+                winResult();
                 break;
         }   
     }
@@ -63,7 +62,6 @@ function determineWinner () {
 //functions for displaying result of game
     function winResult() {
         document.getElementById("displayWinner").style.display= "block";
-
     }
 
     function lossResult(){

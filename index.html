@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Rock, Paper & Scissors</title>
-    <link rel="icon" href="whiteJ.jpg" type="image/x-icon">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Rock, Paper & Scissors</title>
+        <link rel="icon" href="whiteJ.jpg" type="image/x-icon">
+    </head>
+    <body>
 
-    <div class="container center">
-        <h1 > Rock Paper Scissor Game</h1>
+        <div class="container center">
+            <h1 > Rock Paper Scissor Game</h1>
 
-        <div class="box">
-            <form action="submit" class="playerSelect">
-                <ul> 
-                    <li onclick= "selectRock()" name="test">Rock </li>
-                    <li onclick="selectPaper()" name="test" >Paper </li>
-                    <li onclick="selectScissors()" name="test"> Scissors </li>
-                </ul>
-            </form>
+            <div class="box">
+                <form action="submit" class="playerSelect">
+                    <ul> 
+                        <li onclick= "selectRock()">Rock </li>
+                        <li onclick="selectPaper()" >Paper </li>
+                        <li onclick="selectScissors()"> Scissors </li>
+                    </ul>
+                </form>
 
-            <div>
-                <p id ="displayWinner">You Win!!</p>
-                <p id ="displayLoser">You Lose 🤡</p>
-                <p id ="displayTie">We Tied..</p>
-                <!--need to make it so these positions dont move during game-->
+                <div>
+                    <p id ="displayWinner">You Win!!</p>
+                    <p id ="displayLoser">You Lose 🤡</p>
+                    <p id ="displayTie">We Tied..</p>
+                    <!--need to make it so these positions dont move during game-->
+                </div>
             </div>
         </div>
-    </div>
-
-   
-</body>
-<script src="index.js"></script>
+    <!--end of body-->
+        <script src="index.js"></script>
+    </body>
 </html>
