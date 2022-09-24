@@ -1,6 +1,10 @@
 let playerSelection = '';
 const computerOptions = ['rock','paper','scissors']
 let computerSelection = "";
+let winCounter = 0; 
+let lossCounter = 0;
+let tieCounter = 0;
+
 
 
 //switch cases for all posible outcomes of game + display results
@@ -59,16 +63,23 @@ function determineWinner () {
         }   
     }
 
-//functions for displaying result of game
+//functions for displaying result of game + updating winCounter 
     function winResult() {
         document.getElementById("displayWinner").style.display= "block";
+        winCounter+= 1;
+        document.getElementById("displayWinCounter").innerText = 'Wins: ' + winCounter;
     }
 
     function lossResult(){
         document.getElementById("displayLoser").style.display= "block";
+        lossCounter+= 1;
+        document.getElementById("displayLossCounter").innerText = 'Losses: ' + lossCounter;
+
     }
     function tieResult(){ 
-        document.getElementById("displayTie").style.display="block"
+        document.getElementById("displayTie").style.display="block";
+        tieCounter+= 1;
+        document.getElementById("displayTieCounter").innerText = 'Ties: ' + tieCounter;
     }
 
     //removes displayed result after x amount of ms
@@ -98,3 +109,5 @@ function clearResult() {
     document.getElementById("displayTie").style.display="none";
 
 }
+
+

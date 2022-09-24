@@ -1,0 +1,32 @@
+.welcome-message {
+    font-size: 55px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(146, 56, 0);
+    height:350px;
+    color: rgb(224, 224, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+
+}
+
+.navbar{
+    height: 100px;
+}
+.container-fluid{
+    height: 100px;;
+    color: white !important;
+}
+
+.nav-item{
+    /*need this text on menu to be whitye???*/
+    color: white !important;
+}
+
+body{
+    background-color: rgb(189, 188, 188);
+}
+
