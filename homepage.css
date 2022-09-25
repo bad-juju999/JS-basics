@@ -2,7 +2,7 @@
     font-size: 55px;
     font-family:Arial, Helvetica, sans-serif;
     background-color: rgb(146, 56, 0);
-    height:350px;
+    height: auto;
     color: rgb(224, 224, 224);
     display: flex;
     align-items: center;
@@ -10,7 +10,8 @@
     text-align: center;
     padding-right: 100px;
     padding-left: 100px;
-
+    flex-direction: column;
+    padding-top: 40px;
 }
 
 .navbar{
@@ -30,3 +31,7 @@ body{
     background-color: rgb(189, 188, 188);
 }
 
+p {
+    font-size: 25px;
+    padding: 30px;
+}
